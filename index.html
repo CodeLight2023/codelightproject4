@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/svg-with-js.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-font-face.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-shims.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/6.0.2/esm/ionicons.min.js">
+
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- MDB-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Arial','fontAwesome', sans-serif;
+}
+#header {
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+nav {
+    background: rgba(0, 0, 0, 0.315);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+nav .mainmenu {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+}
+nav .mainmenu li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 18px;
+    transition: 2s ease-in-out;
+}
+nav .mainmenu li a:hover {
+    /* background: rgb(255,94,0); */
+    background: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #000;
+}
+nav .openmenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainmenu .closemenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    font-family: fontAwesome;
+}
+.fa-facebook:hover {color: rgb(0,110,255);}
+.fa-twitter:hover {color: rgb(86,154,243);}
+.fa-instagram:hover {color: rgb(255,0,191);}
+.fa-github:hover{color: rgb(255,123,0);}
+.fa-whatsapp:hover{color: #198762;}
+nav .logo {
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+nav .logo h2 {
+    padding: 10px;
+}
+#home {
+    width: 100%;
+    /* height: 100vh; */
+    height: auto;
+    background: #691ac3d3;
+    padding: 60px;
+    margin-top: -90px;
+}
+#home .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#home .container .home-content {
+    margin: 80px auto;
+}
+#home .container .home-content h2 {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 5px;
+}
+#home .container .home-content p {
+    color: rgba(255, 255, 255, 0.555);
+    font-size: 18px;
+    padding: 5px;
+}
+#home .container .home-link {
+    margin: 10px;
+}
+#home .container .home-link a {
+    display: inline-block;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none!important;
+    margin: 10px 10px 0px 0px;
+}
+#home .container .home-link a.learn {
+    background: transparent;
+    border: 2px solid #fff;
+    transition: 0.8s ease-in-out;
+}
+#home .container .home-link a.project {
+    background: #0d45fd;
+    border:none;
+    transition: 0.8s ease-in-out;
+}
+#home .container .home-link a.project:hover {
+    background: transparent;
+    border: 2px solid #fff;
+}
+#home .container .home-link a.project:hover i {
+    animation-name: home-icon;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes home-icon {
+    0% {
+        transform: translateX(0px);
+        color: #fff;
+    }
+    25% {
+        transform: translateX(8px);
+        color: #0d45fd;
+    }
+    50% {
+        transform: translateX(0px);
+        color: #fff;
+    }
+    75% {
+        transform: translateX(8px);
+        color: #0d45fd;;
+    }
+    100% {
+        transform: translateX(0px);
+        color: #fff;
+    }
+}
+#home .container .home-link a.learn:hover {
+    background: #0d45fd;
+    border:none;
+}
+#home .container .home-link a.project i {
+    padding: 5px;
+}
+#home .home-img-container img {
+    width: 400px;
+    height: 400px;
+}
+/* #services .container {
+    margin-top: -600px;
+} */
+#services .service-header {
+    /* color: #fff; */
+    margin: 30px;
+}
+#services .service-header h2 {
+    font-weight: bolder;
+}
+#services .service-header p {
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.562);
+}
+#services .services-box {
+    /* width: auto;
+    height: auto; */
+    padding: 40px;
+	/* border-radius: 10px; */
+    margin: 40px 0;
+    text-align: center;
+    background: #fff;
+	box-shadow: 0 2px 40px 0 rgba(110,130,208, .18);
+    transition: 0.8s ease-in-out;
+}
+#services .services-box .service-icon-box {
+    margin: 10px;
+}
+#services .services-box .service-icon-box i {
+    width: 50px;
+    height: 50px;
+    background: #7912ce;
+    border-radius: 50px;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+#services .services-box h4 {
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bolder;
+}
+#services .services-box p {
+    color: rgba(0, 0, 0, 0.637);
+}
+#services .services-box a {
+    display: inline-block;
+    padding: 10px;
+    background: #fff;
+    margin: 20px;
+    /* box-shadow: 0 2px 40px 0 rgba(110,130,208, .18); */
+    box-shadow: 0 2px 40px 0 rgba(204, 204, 204, 0.356);
+    text-decoration: none!important;
+    color: rgba(0, 0, 0, 0.459);
+}
+#technology {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: #250dfd8a; 
+}
+#technology .tech-content h2 {
+    color: #fff;
+    font-weight: bolder;
+    padding: 10px;
+}
+#technology .tech-content p {
+    color: rgba(255, 255, 255, 0.541);
+    padding: px;
+}
+#technology .tech-icon-container {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+#technology .tech-icon-container .icon-item {
+    margin: 0px auto;
+}
+#technology .tech-icon-container .icon-item li {
+    list-style: none;
+}
+#technology .tech-icon-container .icon-item i {
+    font-size: 40px;
+    padding: 10px;
+}
+/* Promo */
+#promo .promo-icon {
+    display: flex!important;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+}
+#promo .promo-icon img {
+    width: 150px;
+    height: 100px;
+    margin: 30px;
+    filter: grayscale(1);
+    transition: 0.8s ease-in-out;
+}
+#promo .promo-icon img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+/* Hire */
+#hire .hire-box {
+    /* width: auto;
+    height: auto; */
+    padding: 40px;
+	/* border-radius: 10px; */
+    margin: 40px 0;
+    text-align: left;
+    background: #250dfd8a;
+	box-shadow: 0 2px 40px 0 rgba(110,130,208, .18);
+    transition: 0.8s ease-in-out;
+}
+#hire .hire-box h2 {
+    color: #fff;
+    font-weight: bolder;
+    padding: 5px;
+}
+#hire .hire-box p {
+    color: #fff;
+    padding: 5px;
+}
+#hire .hire-box a {
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none!important;
+    margin: 0px 10px 0px 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    transition: 0.8s ease-in-out;
+}
+#hire .hire-box a:hover {
+    box-shadow: 0 2px 40px 0 rgba(110,130,208, .18);
+    background: #ccc;
+    /* border:2px solid #0d45fd; */
+}
+/* Footer */
+footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.623);
+    box-shadow: 50px 20px 40px 0 rgba(110,130,208, .18);
+    padding: 20px;
+}
+footer h2 {
+    padding: 10px;
+    /* color: rgba(0, 0, 0, 0.664); */
+    color: #fff;
+}
+footer .icon {
+    display: flex;
+}
+footer .icon a {
+    /* color: rgba(0, 0, 0, 0.562)!important; */
+    /* color: rgba(255, 255, 255, 0.534)!important; */
+    color: #fff;
+    text-decoration: none!important;
+    padding: 10px;
+}
+footer .icon a i {
+    font-size: 18px;
+    transition: 0.8s ease-in-out;
+}
+footer p {
+    padding: 10px;
+    /* color: rgba(0, 0, 0, 0.562); */
+    color: rgba(255, 255, 255, 0.678)!important;
+}
+footer li {
+    list-style: none;
+    padding: 5px;
+    /* color: rgba(0, 0, 0, 0.562); */
+    color: rgba(255, 255, 255, 0.534);
+}
+footer li a {
+    /* color: rgba(0, 0, 0, 0.562)!important; */
+    color: rgba(255, 255, 255, 0.534)!important;
+    text-decoration: none!important;
+}
+@media(max-width: 740px) {
+    /* #home {
+        width: 100%;
+        height: 200vh;
+        background: #691ac3d3;
+        padding: 20px;
+        margin-top: -90px;
+    } */
+    #promo .promo-icon img {
+        width: 150px;
+        height: auto;
+        margin: 20px;
+        text-align: center;
+    }
+    nav .mainmenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background: #000; */
+        background: #7912ce;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainmenu .closemenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openmenu {
+        display: block;
+    } 
+    nav .mainmenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+</style>
+</head>
+<body>
+    <section id="header">
+        <nav>
+            <div class=" text-warning logo">Code<span class="text-light">Light</span></div>
+            <div class="openmenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainmenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Case Study</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Hire Us</a></li>
+                <div class="closemenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                </span>
+            </ul>
+        </nav>
+        </section>
+
+
+        <!-- Home -->
+        <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="home-content">
+                    <h2>We build beatiful and <br> reliable web solution</h2>
+                    <p>We strongly believe that communication, trust and transparency are the essential elements of successful business relationship.<br>Ready for the Journey</p>
+                    <div class="home-link">
+                        <a href="#" class="learn">Learn More</a>
+                        <a href="#" class="project">Our Projects<i class="fa fa-arrow-right"></i></a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="home-img-container">
+                        <img src="Bg/pic 4.jpg" alt="" class="img-responsive d-block img-fluid text-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container text-center">
+            <div class="service-header">
+            <h2>Our Services</h2>
+            <p>We feel very strong about our skills when it comes to planning, designing <br> and coding applicaions. Here is what we love to do!.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <div class="services-box">
+                        <div class="service-icon-box">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <h4>Business & Product Concept</h4>
+                        <p>
+                            Analyse business and product concepts at start-up workshops or outgoing projects Audits and prepare a visible an sensible product roadmapfor achieving a perfect market.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 text-center">
+                    <div class="services-box">
+                        <div class="service-icon-box">
+                            <i class="fa fa-desktop"></i>
+                        </div>
+                        <h4>Web & Mobile Development</h4>
+                        <p>
+                            Plan, develop and test high quality web application using AngularJs,NodeJs, Javascript, Python, HTML5, SASS, CSS3, frameworks and native mobile languages.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="services-box">
+                        <div class="service-icon-box">
+                            <i class="fa fa-pencil-square-o"></i>
+                        </div>
+                        <h4>UX & UI Design</h4>
+                        <p>
+                            Sketch information architecture and simple mock ups, convert them into clickable prototype and finish with usable interface designs to deliver a good and reliable user experience.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section id="technology">
+        <div class="container text-center">
+            <div class="row text-center">
+                <div class="col-md-6 text-center">
+                    <div class="tech-content">
+                        <h2>We use cutting edge technology</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit. 
+                            Officiis nihil earum, rem quos 
+                            praesentium rerum? Consectetur 
+                            vero ad eum nulla obcaecati. 
+                            Laudantium culpa reprehenderit 
+                            consectetur sed minus esse 
+                            nesciunt dolorem dicta! Rem 
+                            corporis quam molestiae nulla 
+                            aliquam soluta commodi? Odit, 
+                            ratione. Adipisci voluptas 
+                            mollitia explicabo consectetur 
+                            optio eum exercitationem quasi.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                <div class="tech-icon-container">
+                    <div class="icon-item">
+                        <li><i class="fab fa-html5"></i></li>
+                        <li><i class="fab fa-sass"></i></li>
+                        <li><i class="fab fa-angular"></i></li>
+                    </div>
+                    <div class="icon-item">
+                        <li><i class="fab fa-css3-alt"></i></li>
+                        <li><i class="fab fa-js"></i></li>
+                        <li><i class="fab fa-python"></i></li>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="promo">
+    <div class="container">
+        <div class="promo-icon">
+            <img src="Bg/Tnw.png" alt="" class="img-responsive d-block img-fluid text-center">
+            <img src="Bg/Google.png" alt="" class="img-responsive d-block img-fluid text-center">
+            <img src="Bg/Nike.jpeg" alt="" class="img-responsive d-block img-fluid text-center">
+            <img src="Bg/Airbnb.png" alt="" class="img-responsive d-block img-fluid text-center">
+            <img src="Bg/News.png" alt="" class="img-responsive d-block img-fluid text-center">
+        </div>
+    </div>
+</section>
+<!--<section id="promo">
+    <div class="container text-center">
+        <div class="promo-icon">
+           <div class="row">
+                <div class="col-md-2">
+                    <img src="Bg/Tnw.png" alt="" class="img-responsive d-block img-fluid text-center">
+                </div>
+                <div class="col-md-2">
+                    <img src="Bg/Google.png" alt="" class="img-responsive d-block img-fluid text-center">
+                </div>
+                <div class="col-md-2">
+                    <img src="Bg/Nike.jpeg" alt="" class="img-responsive d-block img-fluid text-center">
+                </div>
+                <div class="col-md-2">
+                    <img src="Bg/Airbnb.png" alt="" class="img-responsive d-block img-fluid text-center">
+                </div>
+                <div class="col-md-2">
+                    <img src="Bg/News.png" alt="" class="img-responsive d-block img-fluid text-center">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>-->
+
+
+<section id="hire">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <div class="hire-box">
+                    <h2>Get in touch with us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sit! Quidem laboriosam sequi dolorem dolore!</p>
+                    <a href="#">Hire Us</a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="hire-box">
+                    <h2>Our Projects</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sit! Quidem laboriosam sequi dolorem dolore!</p>
+                    <a href="#">See Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<seection id="footer">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Complete Labs</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Laborum recusandae quis, magni 
+                        pariatur.
+                    </p>
+                    <div class="icon">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h2>Useful Links</h2>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                </div>
+                <div class="col-md-3">
+                    <h2>Case Studies</h2>
+                    <li><a href="#">Swiss Address</a></li>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Nike</a></li>
+                </div>
+                <div class="col-md-3">
+                    <h2>Contact</h2>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Hire Us</a></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+</seection>
+
+
+
+    <script>
+        const mainmenu = document.querySelector('.mainmenu');
+        const closemenu = document.querySelector('.closemenu');
+        const openmenu = document.querySelector('.openmenu');
+
+
+
+
+        openmenu.addEventListener('click',show);
+        closemenu.addEventListener('click',close);
+
+        function show(){
+            mainmenu.style.display = 'flex';
+            mainmenu.style.top = '0';
+        }
+        function close(){
+            mainmenu.style.top = '-100%';
+        }
+    </script>
+
+
+</body>
+</html>
